@@ -14,7 +14,10 @@
   --white-color: #ffffff;
   --hover-main-button: #188ce8;
   --hover-secondary-button: #f5f4fa;
-  --footer-contacts-color: (255, 255, 255, 0.6);
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --logo-black-color: #000000;
+  --footer-background-color: #2f303a;
+  --border-color: #ececec;
 }
 
 body {
@@ -31,13 +34,20 @@ body {
   color: var(--blue-color);
 }
 
+/* Header */
+.header {
+  border: 1px solid var(--border-color);
+}
+
 /* Logo */
 .header .logo {
+  text-decoration: none;
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var(--logo-black-color);
 }
 
 .logo-col {
@@ -46,6 +56,7 @@ body {
 
 /* Site nav */
 .site-nav .link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -59,8 +70,8 @@ body {
 }
 
 /* Text */
-.visual .main-text {
-  font-weight: bold;
+.portfolio .main-text {
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
 
@@ -68,7 +79,7 @@ body {
   color: var(--main-text-color);
 }
 
-.visual .secondary-text {
+.portfolio .secondary-text {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
@@ -76,6 +87,7 @@ body {
 }
 
 .contacts .link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -99,7 +111,7 @@ body {
 }
 
 .dignity .dignity-text {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -113,7 +125,7 @@ body {
 }
 
 .section-header {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -138,16 +150,11 @@ body {
 
 /* Button */
 .main-button {
-  display: flex;
-  justify-content: center;
-
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
 
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--blue-color);
@@ -164,6 +171,11 @@ body {
 }
 
 .filter .secondary-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
   font-family: inherit;
   background-color: var(--hover-secondary-button);
   cursor: pointer;
@@ -174,16 +186,12 @@ body {
   background-color: var(--blue-color);
 }
 
-.filter .text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 /* Footer */
-.adres-text .adress-link {
+.footer {
+  background-color: var(--footer-background-color);
+}
+.address-text .address-link {
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -199,7 +207,8 @@ body {
 }
 
 .footer-logo {
-  font-weight: bold;
+  text-decoration: none;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
