@@ -69,6 +69,11 @@ body {
   color: var(--blue-color);
 }
 
+.site-nav .pf,
+.site-nav .main {
+  color: var(--blue-color);
+}
+
 /* Text */
 .portfolio .main-text {
   font-weight: 700;
@@ -188,6 +193,7 @@ body {
 
 /* Footer */
 .footer {
+  font-style: normal;
   background-color: var(--footer-background-color);
 }
 .address-text .address-link {
